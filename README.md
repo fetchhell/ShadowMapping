@@ -1,1 +1,1 @@
-![alt tag](https://raw.githubusercontent.com/fetchhell/ShadowMapping/efc3f15b914fc1037d77b40a3303edd78b4870e8/Shadow_Mapping/screenshot.PNG)
+![alt tag](https://raw.githubusercontent.com/fetchhell/ShadowMapping/master/screenshot.PNG)
