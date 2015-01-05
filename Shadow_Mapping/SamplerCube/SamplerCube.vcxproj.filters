@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\shader">
+      <UniqueIdentifier>{ac8ee2a5-1590-4334-965e-9b62bd9487b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\file">
+      <UniqueIdentifier>{ea121736-4644-4c2b-9c69-b35e4abdd097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shader_program">
+      <UniqueIdentifier>{310acdcd-542f-4881-8579-56c38568161f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\include">
+      <UniqueIdentifier>{896071b5-6ef9-4acd-82ac-46420d6f16b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\object">
+      <UniqueIdentifier>{c6547200-7206-4000-89a6-eb61ded2c70d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mesh">
+      <UniqueIdentifier>{0d911194-df4a-48a0-83c7-3f473c31d229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mesh\lib3ds">
+      <UniqueIdentifier>{a8e8fc48-cb7a-460d-afbc-aa0b07033ae9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\matrix">
+      <UniqueIdentifier>{fe09af03-4e6a-47ae-a26d-2cb3b883b1aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\camera">
+      <UniqueIdentifier>{0cf581d2-1b8b-410c-9b3a-e0f3162d1821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vector3f">
+      <UniqueIdentifier>{fd830ace-e265-40fb-9114-a746f0ac785c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\config">
+      <UniqueIdentifier>{a05e8aeb-96f8-4c34-8703-ac1472530bc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\texture">
+      <UniqueIdentifier>{c0c5630a-f031-4371-8d85-71d29260524f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\texture\png">
+      <UniqueIdentifier>{c7fba1f8-5df5-4f1f-9fda-bf8ae97432d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\texture\png\libpng">
+      <UniqueIdentifier>{ddca744e-ed2a-4c35-ab33-9822b105d535}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\shader\shader.cpp">
+      <Filter>Source Files\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\mesh\my_mesh.cpp">
+      <Filter>Source Files\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\atmosphere.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\background.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\camera.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\chunk.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\ease.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\file.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\io.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\light.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\material.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\matrix.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\mesh.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\node.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\quat.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\shadow.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\tcb.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\tracks.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\vector.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\lib3ds\viewport.c">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\file\my_file.cpp">
+      <Filter>Source Files\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\matrix\nv_matrix.cpp">
+      <Filter>Source Files\matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\camera\my_camera.cpp">
+      <Filter>Source Files\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\vector3f\vec.cpp">
+      <Filter>Source Files\vector3f</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\png\my_png.cpp">
+      <Filter>Source Files\texture\png</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\object\my_object.cpp">
+      <Filter>Source Files\object</Filter>
+    </ClCompile>
+    <ClCompile Include="scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\shader\shader.h">
+      <Filter>Source Files\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\include\includeAll.h">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\mesh\my_mesh.h">
+      <Filter>Source Files\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\object\my_object.h">
+      <Filter>Source Files\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\atmosphere.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\background.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\camera.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\chunk.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\chunktable.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\ease.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\file.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\io.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\light.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\material.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\matrix.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\mesh.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\node.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\quat.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\shadow.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\tcb.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\tracks.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\types.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\vector.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\lib3ds\viewport.h">
+      <Filter>Source Files\mesh\lib3ds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\file\my_file.h">
+      <Filter>Source Files\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\matrix\nv_matrix.h">
+      <Filter>Source Files\matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\camera\my_camera.h">
+      <Filter>Source Files\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\vector3f\vec.h">
+      <Filter>Source Files\vector3f</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\png\my_png.h">
+      <Filter>Source Files\texture\png</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\config\Config.h">
+      <Filter>Source Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\libpng\png.h">
+      <Filter>Source Files\texture\png\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\libpng\pngconf.h">
+      <Filter>Source Files\texture\png\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\libpng\pngdebug.h">
+      <Filter>Source Files\texture\png\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\libpng\pnginfo.h">
+      <Filter>Source Files\texture\png\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\libpng\pngpriv.h">
+      <Filter>Source Files\texture\png\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\libpng\pngstruct.h">
+      <Filter>Source Files\texture\png\libpng</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shader_program\simple.fs">
+      <Filter>Source Files\shader_program</Filter>
+    </None>
+    <None Include="..\shader_program\simple.vs">
+      <Filter>Source Files\shader_program</Filter>
+    </None>
+    <None Include="..\shader_program\shadow.fs">
+      <Filter>Source Files\shader_program</Filter>
+    </None>
+    <None Include="..\shader_program\shadow.vs">
+      <Filter>Source Files\shader_program</Filter>
+    </None>
+    <None Include="..\shader_program\depthTex.fs">
+      <Filter>Source Files\shader_program</Filter>
+    </None>
+    <None Include="..\shader_program\depthTex.vs">
+      <Filter>Source Files\shader_program</Filter>
+    </None>
+  </ItemGroup>
+</Project>

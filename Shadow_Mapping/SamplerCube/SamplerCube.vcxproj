@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{888A7582-D34A-48B1-AD3E-65F8EBB94CA7}</ProjectGuid>
+    <RootNamespace>SamplerCube</RootNamespace>
+    <ProjectName>Shadow Mapping</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)../Include/;$(IncludePath)</IncludePath>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)../Include/;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)../Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zlib.lib;libpng15.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>zdll.lib;libpng.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)../Lib;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Include\camera\my_camera.cpp" />
+    <ClCompile Include="..\..\Include\file\my_file.cpp" />
+    <ClCompile Include="..\..\Include\lib3ds\atmosphere.c" />
+    <ClCompile Include="..\..\Include\lib3ds\background.c" />
+    <ClCompile Include="..\..\Include\lib3ds\camera.c" />
+    <ClCompile Include="..\..\Include\lib3ds\chunk.c" />
+    <ClCompile Include="..\..\Include\lib3ds\ease.c" />
+    <ClCompile Include="..\..\Include\lib3ds\file.c" />
+    <ClCompile Include="..\..\Include\lib3ds\io.c" />
+    <ClCompile Include="..\..\Include\lib3ds\light.c" />
+    <ClCompile Include="..\..\Include\lib3ds\material.c" />
+    <ClCompile Include="..\..\Include\lib3ds\matrix.c" />
+    <ClCompile Include="..\..\Include\lib3ds\mesh.c" />
+    <ClCompile Include="..\..\Include\lib3ds\node.c" />
+    <ClCompile Include="..\..\Include\lib3ds\quat.c" />
+    <ClCompile Include="..\..\Include\lib3ds\shadow.c" />
+    <ClCompile Include="..\..\Include\lib3ds\tcb.c" />
+    <ClCompile Include="..\..\Include\lib3ds\tracks.c" />
+    <ClCompile Include="..\..\Include\lib3ds\vector.c" />
+    <ClCompile Include="..\..\Include\lib3ds\viewport.c" />
+    <ClCompile Include="..\..\Include\matrix\nv_matrix.cpp" />
+    <ClCompile Include="..\..\Include\mesh\my_mesh.cpp" />
+    <ClCompile Include="..\..\Include\object\my_object.cpp" />
+    <ClCompile Include="..\..\Include\png\my_png.cpp" />
+    <ClCompile Include="..\..\Include\shader\shader.cpp" />
+    <ClCompile Include="..\..\Include\vector3f\vec.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="scene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\camera\my_camera.h" />
+    <ClInclude Include="..\..\Include\config\Config.h" />
+    <ClInclude Include="..\..\Include\file\my_file.h" />
+    <ClInclude Include="..\..\Include\include\includeAll.h" />
+    <ClInclude Include="..\..\Include\lib3ds\atmosphere.h" />
+    <ClInclude Include="..\..\Include\lib3ds\background.h" />
+    <ClInclude Include="..\..\Include\lib3ds\camera.h" />
+    <ClInclude Include="..\..\Include\lib3ds\chunk.h" />
+    <ClInclude Include="..\..\Include\lib3ds\chunktable.h" />
+    <ClInclude Include="..\..\Include\lib3ds\ease.h" />
+    <ClInclude Include="..\..\Include\lib3ds\file.h" />
+    <ClInclude Include="..\..\Include\lib3ds\io.h" />
+    <ClInclude Include="..\..\Include\lib3ds\light.h" />
+    <ClInclude Include="..\..\Include\lib3ds\material.h" />
+    <ClInclude Include="..\..\Include\lib3ds\matrix.h" />
+    <ClInclude Include="..\..\Include\lib3ds\mesh.h" />
+    <ClInclude Include="..\..\Include\lib3ds\node.h" />
+    <ClInclude Include="..\..\Include\lib3ds\quat.h" />
+    <ClInclude Include="..\..\Include\lib3ds\shadow.h" />
+    <ClInclude Include="..\..\Include\lib3ds\tcb.h" />
+    <ClInclude Include="..\..\Include\lib3ds\tracks.h" />
+    <ClInclude Include="..\..\Include\lib3ds\types.h" />
+    <ClInclude Include="..\..\Include\lib3ds\vector.h" />
+    <ClInclude Include="..\..\Include\lib3ds\viewport.h" />
+    <ClInclude Include="..\..\Include\libpng\png.h" />
+    <ClInclude Include="..\..\Include\libpng\pngconf.h" />
+    <ClInclude Include="..\..\Include\libpng\pngdebug.h" />
+    <ClInclude Include="..\..\Include\libpng\pnginfo.h" />
+    <ClInclude Include="..\..\Include\libpng\pngpriv.h" />
+    <ClInclude Include="..\..\Include\libpng\pngstruct.h" />
+    <ClInclude Include="..\..\Include\matrix\nv_matrix.h" />
+    <ClInclude Include="..\..\Include\mesh\my_mesh.h" />
+    <ClInclude Include="..\..\Include\object\my_object.h" />
+    <ClInclude Include="..\..\Include\png\my_png.h" />
+    <ClInclude Include="..\..\Include\shader\shader.h" />
+    <ClInclude Include="..\..\Include\vector3f\vec.h" />
+    <ClInclude Include="scene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shader_program\depthTex.fs" />
+    <None Include="..\shader_program\depthTex.vs" />
+    <None Include="..\shader_program\shadow.fs" />
+    <None Include="..\shader_program\shadow.vs" />
+    <None Include="..\shader_program\simple.fs" />
+    <None Include="..\shader_program\simple.vs" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

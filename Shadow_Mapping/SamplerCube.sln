@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SamplerCube", "SamplerCube\SamplerCube.vcxproj", "{888A7582-D34A-48B1-AD3E-65F8EBB94CA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{888A7582-D34A-48B1-AD3E-65F8EBB94CA7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{888A7582-D34A-48B1-AD3E-65F8EBB94CA7}.Debug|Win32.Build.0 = Debug|Win32
+		{888A7582-D34A-48B1-AD3E-65F8EBB94CA7}.Release|Win32.ActiveCfg = Release|Win32
+		{888A7582-D34A-48B1-AD3E-65F8EBB94CA7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
